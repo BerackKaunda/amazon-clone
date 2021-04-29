@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* 
 .wrapper {
     position: relative;
@@ -183,7 +182,7 @@
 .cardButtons a:hover{
     color: tomato;
     text-decoration: underline;
-=======
+}
 /* 
 .wrapper {
     position: relative;
@@ -368,5 +367,4 @@
 .cardButtons a:hover{
     color: tomato;
     text-decoration: underline;
->>>>>>> fc38dc19853f2223fc4da6681e66309e4b12e1f1
 }
