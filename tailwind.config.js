@@ -2,14 +2,17 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: [],
+    plugins: [
+      require('@tailwindcss/forms'),
+    ],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
+      sm: '500px',
+      md: '800px',
+      lg: '1050px',
+      xl: '1260px',
       '2xl': '1536px',
     },
     colors: {
@@ -22,8 +25,12 @@ module.exports = {
       gray:{
         350:'#EAECEC'
       },
+  
       red: colors.red,
       yellow: colors.amber,
+      yellow:{
+        850:'#E69732'
+      },
       green: colors.emerald,
       blue: colors.blue,
       blue:{
@@ -87,7 +94,9 @@ module.exports = {
     backdropSaturate: (theme) => theme('saturate'),
     backdropSepia: (theme) => theme('sepia'),
     backgroundColor: (theme) => theme('colors'),
+  
     backgroundImage: {
+      'hero-1': "url('/public/images/hero.jpg')",
       none: 'none',
       'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
       'gradient-to-tr': 'linear-gradient(to top right, var(--tw-gradient-stops))',

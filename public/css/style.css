@@ -1,24 +1,3 @@
-/* 
-.wrapper {
-    position: relative;
-    width: auto;
-    background-color: rgb(234,236,236);
-    margin-bottom: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
-    border: 1px solid;
-
-} */
-
-.heroImg{
-    width: auto;
-    height: 50vh;
-    border: 2px solid;
-    background-image: url(../images/hero.jpg);
-    margin: 30px;
-    background-size: cover;
-    position: relative;
-}
 
 
 .heroImgtext{
