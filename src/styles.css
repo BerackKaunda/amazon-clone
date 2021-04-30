@@ -2,3 +2,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.categoryContainer{
+    @apply border border-white text-center m-2;
+}
+.categoryH1{
+    @apply text-blue-850 text-3xl font-bold text-center pt-7 pb-2 w-auto md:pb-5 md:text-5xl;
+}
+.category{
+   @apply  text-sm grid grid-cols-2 gap-2 m-3 md:gap-4 md:text-xl;
+}
+.categoryCard{
+    @apply bg-gray-350 cursor-pointer rounded-md shadow-md;
+}
+.categoryCardImg{
+    @apply h-32 object-contain w-full;
+}
+.bannerGrid{
+    @apply grid sm:grid-cols-2 md:justify-evenly;
+}
+.banner{
+    @apply m-2 rounded-md shadow-xl overflow-hidden;
+}
+bannerImg{
+    @apply object-cover cursor-pointer;
+}
+.row{
+    @apply text-center m-2 grid grid-cols-2  gap-0.5 sm:gap-5 sm:grid-cols-3 md:gap-8 md:grid-cols-4 pt-7 justify-evenly;
+}
+.card{
+    @apply bg-white;
+}
+.cardImg{
+    @apply h-36 object-contain w-full md:h-56 lg:h-64;
+}
+.cardContents{
+    @apply text-xs p-2 space-y-2;
+}
+.cardText{
+    @apply truncate overflow-hidden;
+}
+.cardAmount{
+    @apply text-red-700;
+}
+.cardBtn{
+    @apply border pr-2 pl-2 block bg-yellow-850;
+}

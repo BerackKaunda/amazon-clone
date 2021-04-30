@@ -12,186 +12,219 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="p-0 bg-gray-350 font-Nunito m-0">
-    <section class="bg-gray-350 relative mb-7 w-auto xl:mr-16 xl:ml-16">
-        <div class="bg-gray-350 flex p-3">
-            <img class=" h-12 float-left" src="./images/amazon-logo.jpg" alt="">
-            <img class="h-10 justify-end" src="./images/profile.png" alt="">
-            <img class="h-10 justify-end"src="./images/cart.png" alt="">
+    <section class="bg-gray-350 relative mb-7 w-auto">
+
+        <div class=" hidden md:block md:cursor-pointer md:pt-2 md:pb-2 md:bg-blue-850 md:overflow-hidden  md:text-center md:text-gray-350 md:text-sm md:sticky md:top-0">
+            <div class=" ">
+            <div class=" md:float-left md:p-2 md:hover:border md:hover:border-white">
+                <img class="md:h-8 lg:h-11" src="./images/Amazon-logo-white.png" alt="">
+               </div>
+                <div class="md:float-left lg:pl-16 md:pr-6">
+                    <input class=" md:border md:rounded-md md:p-4 md:w-64 md:box-border md:shadow-xl focus:outline-none focus:ring-2 focus:ring-yellow-850 focus:border-transparent lg:w-98 " type="text" type="search" placeholder="&#xF002; What are you looking for" style="font-family:Arial, FontAwesome">
+                </div>
+            </div>
+            <div>
+                <div class=" md:mr-1 md:hover:border md:float-right md:hover:border-white md:border-md md:p-2">          
+                <img class="md:h-5 md:object-contain md:w-full"  src="./images/cart.png" alt="">
+                <p>
+                    Cart
+                </p>
+            </div>
+        </div>
+            <div class="">
+                <div class="md:hover:border md:mr-1 md:float-right md:hover:border-white md:hover:border-md md:p-2">
+                    <img class="md:h-5 md:object-contain md:w-full" src="./images/profile.png" alt="">
+                    <p>Account</p>
+                </div>
+            </div>
+            <div class="">
+                <div class="md:hover:border md:mr-1 md:float-right md:flex md:hover:border-white md:hover:border-md md:p-2">
+                    <img class="h-8 " src="./images/location.png" alt="">
+                    <p class="w-32 break-normal">
+                        Deliver to Kaunda -madrid 23838    
+                    </p>
+                </div>
+            </div>        
+        </div>
+        <div class="md:hidden">
+        <div class="bg-gray-350 text-center block p-3 cursor-pointer">
+            <img class="h-12 float-left" src="./images/amazon-logo.jpg" alt="">
+            <img class="h-9 float-right ml-2" src="./images/profile.png" alt="">
+            <img class="h-10 float-right"  src="./images/cart.png" alt="">
         </div>
         <div class="m-2 " >
-            <input class="border border-black rounded-md  p-1 box-border shadow-xl w-full" type="text" type="search" placeholder="&#xF002; What are you looking for" style="font-family:Arial, FontAwesome">
+            <input class="border border-black rounded-md  p-1 box-border shadow-xl w-full focus:outline-none focus:ring-2 focus:ring-yellow-850 focus:border-transparent" type="text" type="search" placeholder="&#xF002; What are you looking for" style="font-family:Arial, FontAwesome">
         </div>
         <div class="bg-blue-850 flex justify-center p-4">
             <img class="h-6" src="./images/location.png" alt="">
-            <p class="text-gray-350 text-sm text-center">
+            <p class="text-gray-350 text-sm text-center sm:text-lg ">
                 Deliver to Kaunda -madrid 23838
             </p>
         </div>
-            <div>
-                <h1 class="text-blue-850 text-3xl font-bold text-center pt-3 pb-2 w-auto md:pb-5 md:text-5xl">Amazon Kenya</h1>
-                <p class="text-blue-850 text-center pb-5 underline md:text-3xl">We sell genuine amazon products</p>
+    </div>
+            <div class="text-blue-850 text-center">
+                <h1 class=" text-3xl font-bold pt-3 pb-2 w-auto md:pb-5 md:text-5xl">Amazon Kenya</h1>
+                <p class=" pb-5 underline md:text-3xl">We sell genuine amazon products</p>
             </div>
-      
-        <div class="onSwitch hidden lg:pb-6 pt-3">
-            <label class="switch"  id="mySwitch">
-                <input type="checkbox" id="switchInput">
-                <span class="slider round"></span>
-            </label>
-            <p>Light Mode</p>
-        </div>
-
         <div class=" bg-cover bg-center m-2 h-48 overflow-hidden md:h-96 cursor-pointer" style="background-image: url(./images/hero.jpg)">
         </div>
-        <div class="grid mt-4 sm:grid-cols-2 md:justify-evenly">
-            <div class="m-2 rounded-md shadow-xl overflow-hidden ">
-                <img class="object-cover cursor-pointer" src="./images/banner1.jpg" alt="">
+
+        <section class="xl:mr-16 xl:ml-16">
+        <div class="mt-4 bannerGrid">
+            <div class="banner">
+                <img class="bannerImg" src="./images/banner1.jpg" alt="">
             </div>
-            <div class="m-2 rounded-md shadow-xl overflow-hidden">
-                <img class="object-cover cursor-pointer" src="./images/banner2.jpg" alt="">
+            <div class="banner">
+                <img class="bannerImg" src="./images/banner2.jpg" alt="">
             </div>
         </div>
 
-        <div class="bg-white border border-white text-center m-2">
-            <h1 class="text-blue-850 text-3xl font-bold text-center pt-7 pb-2 w-auto md:pb-5 md:text-5xl ">
+        <div class="categoryContainer">
+            <h1 class="categoryH1">
                 Shop By Category
             </h1>
-            <div class=" text-sm grid grid-cols-2 gap-2 m-3 md:gap-4 md:text-xl">
-                <div class="bg-gray-350 cursor-pointer rounded-md shadow-md">
-                    <img class="h-32 object-contain w-full" src="./images/category1.jpg" alt="">
+            <div class="category">
+                <div class="categoryCard">
+                    <img class="categoryCardImg" src="./images/category1.jpg" alt="">
                     <span class="mt-28">Video Games</span>
                 </div>
-                <div class="bg-gray-350 cursor-pointer rounded-md shadow-md">
-                    <img class="h-32 object-contain w-full" src="./images/category2.jpg" alt="">
+                <div class="categoryCard">
+                    <img class="categoryCardImg" src="./images/category2.jpg" alt="">
                     <span class="mt-28">Computer Accessories</span>
                 </div>
-                <div class="bg-gray-350 cursor-pointer rounded-md shadow-md">
-                    <img class="h-32 object-contain w-full" src="./images/category3.jpg" alt="">
+                <div class="categoryCard">
+                    <img class="categoryCardImg" src="./images/category3.jpg" alt="">
                     <span class="mt-28">Baby & Toys</span>
                 </div>
-                <div class="bg-gray-350 cursor-pointer rounded-md shadow-md">
-                    <img class="h-32 object-contain w-full" src="./images/category4.jpg" alt="">
+                <div class="categoryCard">
+                    <img class="categoryCardImg" src="./images/category4.jpg" alt="">
                     <span class="mt-28">Phones & Electronics</span>
                 </div>
             </div>
         </div>
         
-        <div class="row1 text-center m-2 grid grid-cols-2  gap-0.5 sm:gap-5 sm:grid-cols-3 md:gap-8 md:grid-cols-4 pt-7 justify-evenly">
-            <div class="bg-white">
-                <img class="h-36 object-contain w-full md:h-56 lg:h-64" src="./images/img1.jpg" alt="">
-                <div class="text-xs p-2 space-y-2">
-                    <p class="">
-                        Moto G Power (2020)...
+
+
+
+        <div class="row">
+            <div class="card">
+                <img class="cardImg" src="./images/img1.jpg" alt="">
+                <div class="cardContents">
+                    <p class="cardText">
+                    Moto G Power | 2021 | 3-Day Battery | Unlocked | Made for US by Motorola | 4/64GB | 48MP Camera | Gray
                     </p>
-                    <p class="text-red-700">
+                    <p class="cardAmount">
                         $155  from <del class="font-bold">$455</del>
                     </p>
-                    <a href="" class="border pr-2 pl-2 block bg-yellow-850">Add to Cart</a>
-                    <a href="" class="border pr-2 pl-2 block bg-yellow-850">More like this</a>
+                    <a href="" class="cardBtn">Add to Cart</a>
+                    <a href="" class="cardBtn">More like this</a>
                 </div>            
             </div>
-            <div class="bg-white">
-                <img class="h-36 object-contain w-full md:h-56 lg:h-64" src="./images/img1.jpg" alt="">
-                <div class="text-xs p-2 space-y-2">
-                    <p class="">
-                        Moto G Power (2020)...
-                    </p>
-                    <p class="text-red-700">
+            <div class="card">
+                <img class="cardImg" src="./images/img1.jpg" alt="">
+                <div class="cardContents">
+                    <p class="cardText">
+                        Moto G Power | 2021 | 3-Day Battery | Unlocked | Made for US by Motorola | 4/64GB | 48MP Camera | Gray
+                        </p>
+                    <p class="cardAmount">
                         $155  from <del class="font-bold">$455</del>
                     </p>
-                    <a href="" class="border pr-2 pl-2 block bg-yellow-850">Add to Cart</a>
-                    <a href="" class="border pr-2 pl-2 block bg-yellow-850">More like this</a>
+                    <a href="" class="cardBtn">Add to Cart</a>
+                    <a href="" class="cardBtn">More like this</a>
                 </div>            
             </div>
-            <div class="bg-white">
-                <img class="h-36 object-contain w-full md:h-56 lg:h-64" src="./images/img1.jpg" alt="">
-                <div class="text-xs p-2 space-y-2">
+            <div class="card">
+                <img class="cardImg" src="./images/img1.jpg" alt="">
+                <div class="cardContents">
                     <p class="">
-                        Moto G Power (2020)...
-                    </p>
-                    <p class="text-red-700">
+                        <p class="cardText">
+                            Moto G Power | 2021 | 3-Day Battery | Unlocked | Made for US by Motorola | 4/64GB | 48MP Camera | Gray
+                            </p>
+                    <p class="cardAmount">
                         $155  from <del class="font-bold">$455</del>
                     </p>
-                    <a href="" class="border pr-2 pl-2 block bg-yellow-850">Add to Cart</a>
-                    <a href="" class="border pr-2 pl-2 block bg-yellow-850">More like this</a>
+                    <a href="" class="cardBtn">Add to Cart</a>
+                    <a href="" class="cardBtn">More like this</a>
                 </div>            
             </div>
-            <div class="bg-white">
-                <img class="h-36 object-contain w-full md:h-56 lg:h-64" src="./images/img1.jpg" alt="">
-                <div class="text-xs p-2 space-y-2">
-                    <p class="">
-                        Moto G Power (2020)...
-                    </p>
-                    <p class="text-red-700">
+            <div class="card">
+                <img class="cardImg" src="./images/img1.jpg" alt="">
+                <div class="cardContents">
+                    <p class="cardText">
+                        Moto G Power | 2021 | 3-Day Battery | Unlocked | Made for US by Motorola | 4/64GB | 48MP Camera | Gray
+                        </p>
+                    <p class="cardAmount">
                         $155  from <del class="font-bold">$455</del>
                     </p>
-                    <a href="" class="border pr-2 pl-2 block bg-yellow-850">Add to Cart</a>
-                    <a href="" class="border pr-2 pl-2 block bg-yellow-850">More like this</a>
+                    <a href="" class="cardBtn">Add to Cart</a>
+                    <a href="" class="cardBtn">More like this</a>
                 </div>            
             </div>
             </div>
-            <div class="grid sm:grid-cols-2 md:justify-evenly">
-                <div class="m-2 rounded-md shadow-xl overflow-hidden">
-                    <img class="object-cover" src="./images/banner3.jpg" alt="">
+            <div class="bannerGrid">
+                <div class="banner">
+                    <img class="bannerImg" src="./images/banner3.jpg" alt="">
                 </div>
-                <div class="m-2 rounded-md shadow-xl overflow-hidden">
-                    <img class="object-cover" src="./images/banner4.jpg" alt="">
+                <div class="banner">
+                    <img class="bannerImg" src="./images/banner4.jpg" alt="">
                 </div>
             </div>
 
-            <div class="row1 text-center m-2 grid grid-cols-2  gap-0.5 sm:gap-5 sm:grid-cols-3 md:gap-8 md:grid-cols-4 pt-7 justify-evenly">
-                <div class="bg-white">
-                    <img class="h-36 object-contain w-full md:h-56 lg:h-64" src="./images/img1.jpg" alt="">
-                    <div class="text-xs p-2 space-y-2">
-                        <p class="">
-                            Moto G Power (2020)...
-                        </p>
-                        <p class="text-red-700">
+            <div class="row">
+                <div class="card">
+                    <img class="cardImg" src="./images/img1.jpg" alt="">
+                    <div class="cardContents">
+                        <p class="cardText">
+                            Moto G Power | 2021 | 3-Day Battery | Unlocked | Made for US by Motorola | 4/64GB | 48MP Camera | Gray
+                            </p>
+                        <p class="cardAmount">
                             $155  from <del class="font-bold">$455</del>
                         </p>
-                        <a href="" class="border pr-2 pl-2 block bg-yellow-850">Add to Cart</a>
-                        <a href="" class="border pr-2 pl-2 block bg-yellow-850">More like this</a>
+                        <a href="" class="cardBtn">Add to Cart</a>
+                        <a href="" class="cardBtn">More like this</a>
                     </div>            
                 </div>
-                <div class="bg-white">
-                    <img class="h-36 object-contain w-full md:h-56 lg:h-64" src="./images/img1.jpg" alt="">
-                    <div class="text-xs p-2 space-y-2">
-                        <p class="">
-                            Moto G Power (2020)...
-                        </p>
-                        <p class="text-red-700">
+                <div class="card">
+                    <img class="cardImg" src="./images/img1.jpg" alt="">
+                    <div class="cardContents">
+                        <p class="cardText">
+                            Moto G Power | 2021 | 3-Day Battery | Unlocked | Made for US by Motorola | 4/64GB | 48MP Camera | Gray
+                            </p>
+                        <p class="cardAmount">
                             $155  from <del class="font-bold">$455</del>
                         </p>
-                        <a href="" class="border pr-2 pl-2 block bg-yellow-850">Add to Cart</a>
-                        <a href="" class="border pr-2 pl-2 block bg-yellow-850">More like this</a>
+                        <a href="" class="cardBtn">Add to Cart</a>
+                        <a href="" class="cardBtn">More like this</a>
                     </div>            
                 </div>
-                <div class="bg-white">
-                    <img class="h-36 object-contain w-full md:h-56 lg:h-64" src="./images/img1.jpg" alt="">
-                    <div class="text-xs p-2 space-y-2">
-                        <p class="">
-                            Moto G Power (2020)...
-                        </p>
-                        <p class="text-red-700">
+                <div class="card">
+                    <img class="cardImg" src="./images/img1.jpg" alt="">
+                    <div class="cardContents">
+                        <p class="cardText">
+                            Moto G Power | 2021 | 3-Day Battery | Unlocked | Made for US by Motorola | 4/64GB | 48MP Camera | Gray
+                            </p>
+                        <p class="cardAmount">
                             $155  from <del class="font-bold">$455</del>
                         </p>
-                        <a href="" class="border pr-2 pl-2 block bg-yellow-850">Add to Cart</a>
-                        <a href="" class="border pr-2 pl-2 block bg-yellow-850">More like this</a>
+                        <a href="" class="cardBtn">Add to Cart</a>
+                        <a href="" class="cardBtn">More like this</a>
                     </div>            
                 </div>
-                <div class="bg-white">
-                    <img class="h-36 object-contain w-full md:h-56 lg:h-64" src="./images/img1.jpg" alt="">
-                    <div class="text-xs p-2 space-y-2">
-                        <p class="">
-                            Moto G Power (2020)...
-                        </p>
-                        <p class="text-red-700">
+                <div class="card">
+                    <img class="cardImg" src="./images/img1.jpg" alt="">
+                    <div class="cardContents">
+                        <p class="cardText">
+                            Moto G Power | 2021 | 3-Day Battery | Unlocked | Made for US by Motorola | 4/64GB | 48MP Camera | Gray
+                            </p>
+                        <p class="cardAmount">
                             $155  from <del class="font-bold">$455</del>
                         </p>
-                        <a href="" class="border pr-2 pl-2 block bg-yellow-850">Add to Cart</a>
-                        <a href="" class="border pr-2 pl-2 block bg-yellow-850">More like this</a>
+                        <a href="" class="cardBtn">Add to Cart</a>
+                        <a href="" class="cardBtn">More like this</a>
                     </div>            
                 </div>
                 </div>
+            </section>
     </section>
 </body>
 <script src="./js/jquery-3.6.0.min.js"></script>
