@@ -3,15 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* category container */
 .categoryContainer{
-    @apply border border-white text-center m-2;
+    @apply bg-white text-center;
 }
 .categoryH1{
-    @apply text-blue-850 text-3xl font-bold text-center pt-7 pb-2 w-auto md:pb-5 md:text-5xl;
+    @apply text-blue-850 text-3xl font-bold pt-7 pb-2 w-auto md:pb-5 md:text-5xl;
 }
 .category{
-   @apply  text-sm grid grid-cols-2 gap-2 m-3 md:gap-4 md:text-xl;
+   @apply  text-sm grid grid-cols-2 gap-2 m-3 pb-5 md:gap-4 md:text-xl;
 }
 .categoryCard{
     @apply bg-gray-350 cursor-pointer rounded-md shadow-md;
@@ -19,20 +19,25 @@
 .categoryCardImg{
     @apply h-32 object-contain w-full;
 }
+
+/* banner pictures */
 .bannerGrid{
     @apply grid sm:grid-cols-2 md:justify-evenly;
 }
 .banner{
-    @apply m-2 rounded-md shadow-xl overflow-hidden;
+    @apply m-2 rounded-md shadow-xl overflow-hidden  transform hover:scale-105;
 }
 bannerImg{
     @apply object-cover cursor-pointer;
 }
+
+
+/* products rows and cards */
 .row{
     @apply text-center m-2 grid grid-cols-2  gap-0.5 sm:gap-5 sm:grid-cols-3 md:gap-8 md:grid-cols-4 pt-7 justify-evenly;
 }
 .card{
-    @apply bg-white;
+    @apply bg-white  transform hover:scale-105;
 }
 .cardImg{
     @apply h-36 object-contain w-full md:h-56 lg:h-64;
@@ -48,4 +53,20 @@ bannerImg{
 }
 .cardBtn{
     @apply border pr-2 pl-2 block bg-yellow-850;
+}
+
+
+/* footer */
+.footer{
+    @apply mt-10 mb-10 md:text-center bg-blue-850 overflow-hidden text-sm text-gray-350;
+}
+
+.footerCols{
+    @apply grid grid-cols-1 md:grid-cols-4 m-10 md:mt-14 md:mb-28;
+}
+.footerHeader{
+    @apply font-bold text-xl;
+}
+.footerList{
+    @apply hover:underline leading-6 md:leading-8;
 }
